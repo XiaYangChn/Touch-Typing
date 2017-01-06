@@ -1,0 +1,146 @@
+﻿<Window x:Name="BaseWindow" x:Class="Touch_Typing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Touch-Typing" Height="368" Width="1088" Background="{x:Null}" WindowStyle="None" AllowsTransparency="True" Top="0" WindowStartupLocation="CenterOwner" Topmost="True" Icon="Images/Icon/icon.png" Opacity="0.3" MouseLeftButtonDown="OnMouseLeftButtonDown" AllowDrop="True" MouseWheel="BaseWindow_MouseWheel" Closed="OnWindowClosed">
+
+    <Viewbox  Name="BaseViewbox" Stretch="Fill">
+        <Canvas Height="368" Name="BaseCanvas" Width="1088" >
+            <Border BorderThickness="0" BorderBrush="#FFFFFFFF"  CornerRadius="6" Height="368" Width="1088">
+                <!-- 设置主面板圆角、背景颜色 -->
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFFFF"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Grid x:Name="KeyGrid">
+                    <!--    after click -->
+                    <Image x:Name="__192" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_192.png" Visibility="Hidden"/>
+                    <Image x:Name="__49" HorizontalAlignment="Left" Margin="80,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_49.png"  Visibility="Hidden"/>
+                    <Image x:Name="__50" HorizontalAlignment="Left" Margin="152,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_50.png" Visibility="Hidden"/>
+                    <Image x:Name="__51" HorizontalAlignment="Left" Margin="224,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_51.png" Visibility="Hidden"/>
+                    <Image x:Name="__52" HorizontalAlignment="Left" Margin="296,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_52.png" Visibility="Hidden"/>
+                    <Image x:Name="__53" HorizontalAlignment="Left" Margin="368,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_53.png" Visibility="Hidden"/>
+                    <Image x:Name="__54" HorizontalAlignment="Left" Margin="440,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_54.png" Visibility="Hidden"/>
+                    <Image x:Name="__55" HorizontalAlignment="Left" Margin="512,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_55.png" Visibility="Hidden"/>
+                    <Image x:Name="__56" HorizontalAlignment="Left" Margin="584,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_56.png" Visibility="Hidden"/>
+                    <Image x:Name="__57" HorizontalAlignment="Left" Margin="656,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_57.png" Visibility="Hidden"/>
+                    <Image x:Name="__48" HorizontalAlignment="Left" Margin="728,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_48.png" Visibility="Hidden"/>
+                    <Image x:Name="__189" HorizontalAlignment="Left" Margin="800,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_189.png" Visibility="Hidden"/>
+                    <Image x:Name="__187" HorizontalAlignment="Left" Margin="872,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_187.png" Visibility="Hidden"/>
+                    <Image x:Name="__220" HorizontalAlignment="Left" Margin="976,80,-28.8,-30.4" VerticalAlignment="Top" Width="104" Height="64" Source="Images/OnClick/_220.png" Visibility="Hidden"/>
+                    <Image x:Name="__8" HorizontalAlignment="Left" Margin="944,8,0,0" VerticalAlignment="Top" Width="136" Height="64" Source="Images/OnClick/_8.png" Visibility="Hidden"/>
+                    <Image x:Name="__9" HorizontalAlignment="Left" Margin="8,80,0,-49.8" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_9.png" Visibility="Hidden"/>
+                    <Image x:Name="__20" HorizontalAlignment="Left" Margin="8,152,0,-110.6" VerticalAlignment="Top" Width="132" Height="64" Source="Images/OnClick/_20.png" Visibility="Hidden"/>
+                    <Image x:Name="__65" HorizontalAlignment="Left" Margin="148,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_65.png" Visibility="Hidden"/>
+                    <Image x:Name="__83" HorizontalAlignment="Left" Margin="220,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_83.png" Visibility="Hidden"/>
+                    <Image x:Name="__68" HorizontalAlignment="Left" Margin="292,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_68.png" Visibility="Hidden"/>
+                    <Image x:Name="__70" HorizontalAlignment="Left" Margin="364,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_70.png" Visibility="Hidden"/>
+                    <Image x:Name="__71" HorizontalAlignment="Left" Margin="436,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_71.png" Visibility="Hidden"/>
+                    <Image x:Name="__72" HorizontalAlignment="Left" Margin="508,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_72.png" Visibility="Hidden"/>
+                    <Image x:Name="__74" HorizontalAlignment="Left" Margin="580,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_74.png" Visibility="Hidden"/>
+                    <Image x:Name="__75" HorizontalAlignment="Left" Margin="652,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_75.png" Visibility="Hidden"/>
+                    <Image x:Name="__76" HorizontalAlignment="Left" Margin="724,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_76.png" Visibility="Hidden"/>
+                    <Image x:Name="__186" HorizontalAlignment="Left" Margin="796,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_186.png" Visibility="Hidden"/>
+                    <Image x:Name="__222" HorizontalAlignment="Left" Margin="868,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_222.png" Visibility="Hidden"/>
+                    <Image x:Name="__81" HorizontalAlignment="Left" Margin="111,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_81.png" Visibility="Hidden"/>
+                    <Image x:Name="__87" HorizontalAlignment="Left" Margin="183,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_87.png" Visibility="Hidden"/>
+                    <Image x:Name="__69" HorizontalAlignment="Left" Margin="255,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_69.png" Visibility="Hidden"/>
+                    <Image x:Name="__82" HorizontalAlignment="Left" Margin="327,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_82.png" Visibility="Hidden"/>
+                    <Image x:Name="__84" HorizontalAlignment="Left" Margin="399,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_84.png" Visibility="Hidden"/>
+                    <Image x:Name="__89" HorizontalAlignment="Left" Margin="471,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_89.png" Visibility="Hidden"/>
+                    <Image x:Name="__85" HorizontalAlignment="Left" Margin="543,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_85.png" Visibility="Hidden"/>
+                    <Image x:Name="__73" HorizontalAlignment="Left" Margin="615,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_73.png" Visibility="Hidden"/>
+                    <Image x:Name="__79" HorizontalAlignment="Left" Margin="687,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_79.png" Visibility="Hidden"/>
+                    <Image x:Name="__80" HorizontalAlignment="Left" Margin="759,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_80.png" Visibility="Hidden"/>
+                    <Image x:Name="__219" HorizontalAlignment="Left" Margin="831,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_219.png" Visibility="Hidden"/>
+                    <Image x:Name="__13" HorizontalAlignment="Left" Margin="942,152,-70.4,-110.4" VerticalAlignment="Top" Width="138" Height="64" Source="Images/OnClick/_13.png" Visibility="Hidden"/>
+                    <Image x:Name="__160" HorizontalAlignment="Left" Margin="8,224,0,-174.4" VerticalAlignment="Top" Width="172" Height="64" Source="Images/OnClick/_160.png" Visibility="Hidden"/>
+                    <Image x:Name="__90" HorizontalAlignment="Left" Margin="188,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_90.png" Visibility="Hidden"/>
+                    <Image x:Name="__88" HorizontalAlignment="Left" Margin="260,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_88.png" Visibility="Hidden"/>
+                    <Image x:Name="__67" HorizontalAlignment="Left" Margin="332,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_67.png" Visibility="Hidden"/>
+                    <Image x:Name="__86" HorizontalAlignment="Left" Margin="404,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_86.png" Visibility="Hidden"/>
+                    <Image x:Name="__66" HorizontalAlignment="Left" Margin="476,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_66.png" Visibility="Hidden"/>
+                    <Image x:Name="__78" HorizontalAlignment="Left" Margin="548,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_78.png" Visibility="Hidden"/>
+                    <Image x:Name="__77" HorizontalAlignment="Left" Margin="620,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_77.png" Visibility="Hidden"/>
+                    <Image x:Name="__188" HorizontalAlignment="Left" Margin="692,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_188.png" Visibility="Hidden"/>
+                    <Image x:Name="__190" HorizontalAlignment="Left" Margin="764,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_190.png" Visibility="Hidden"/>
+                    <Image x:Name="__191" HorizontalAlignment="Left" Margin="836,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_191.png" Visibility="Hidden"/>
+                    <Image x:Name="__161" HorizontalAlignment="Left" Margin="908,224,-68.8,-174.4" VerticalAlignment="Top" Width="172" Height="64" Source="Images/OnClick/_161.png" Visibility="Hidden"/>
+                    <Image x:Name="__162" HorizontalAlignment="Left" Margin="8,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_162.png" Visibility="Hidden"/>
+                    <Image x:Name="__91" HorizontalAlignment="Left" Margin="111,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_91.png" Visibility="Hidden"/>
+                    <Image x:Name="__164" HorizontalAlignment="Left" Margin="214,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_164.png" Visibility="Hidden"/>
+                    <Image x:Name="__92" HorizontalAlignment="Left" Margin="779,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_92.png" Visibility="Hidden"/>
+                    <Image x:Name="__93" HorizontalAlignment="Left" Margin="882,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_93.png" Visibility="Hidden"/>
+                    <Image x:Name="__163" HorizontalAlignment="Left" Margin="985,296,-68.8,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_163.png" Visibility="Hidden"/>
+                    <Image x:Name="__165" HorizontalAlignment="Left" Margin="676,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/OnClick/_165.png" Visibility="Hidden"/>
+                    <Image x:Name="__32" HorizontalAlignment="Left" Margin="317,296,0,-246.4" VerticalAlignment="Top" Width="351" Height="64" Source="Images/OnClick/_32.png" Visibility="Hidden"/>
+                    <Image x:Name="__221" HorizontalAlignment="Left" Margin="903,80,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/OnClick/_221.png" Visibility="Hidden"/>
+                    <!--    before click -->
+                    <Image x:Name="_192" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/192.png"/>
+                    <Image x:Name="_49" HorizontalAlignment="Left" Margin="80,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/49.png" />
+                    <Image x:Name="_50" HorizontalAlignment="Left" Margin="152,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/50.png"/>
+                    <Image x:Name="_51" HorizontalAlignment="Left" Margin="224,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/51.png"/>
+                    <Image x:Name="_52" HorizontalAlignment="Left" Margin="296,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/52.png"/>
+                    <Image x:Name="_53" HorizontalAlignment="Left" Margin="368,8,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/53.png"/>
+                    <Image x:Name="_54" HorizontalAlignment="Left" Margin="440,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/54.png"/>
+                    <Image x:Name="_55" HorizontalAlignment="Left" Margin="512,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/55.png"/>
+                    <Image x:Name="_56" HorizontalAlignment="Left" Margin="584,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/56.png"/>
+                    <Image x:Name="_57" HorizontalAlignment="Left" Margin="656,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/57.png"/>
+                    <Image x:Name="_48" HorizontalAlignment="Left" Margin="728,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/48.png"/>
+                    <Image x:Name="_189" HorizontalAlignment="Left" Margin="800,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/189.png"/>
+                    <Image x:Name="_187" HorizontalAlignment="Left" Margin="872,8,-72,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/187.png"/>
+                    <Image x:Name="_220" HorizontalAlignment="Left" Margin="976,80,-28.8,-30.4" VerticalAlignment="Top" Width="104" Height="64" Source="Images/220.png"/>
+                    <Image x:Name="_8" HorizontalAlignment="Left" Margin="944,8,0,0" VerticalAlignment="Top" Width="136" Height="64" Source="Images/8.png"/>
+                    <Image x:Name="_9" HorizontalAlignment="Left" Margin="8,80,0,-49.8" VerticalAlignment="Top" Width="95" Height="64" Source="Images/9.png"/>
+                    <Image x:Name="_20" HorizontalAlignment="Left" Margin="8,152,0,-110.6" VerticalAlignment="Top" Width="132" Height="64" Source="Images/20.png"/>
+                    <Image x:Name="_65" HorizontalAlignment="Left" Margin="148,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/65.png"/>
+                    <Image x:Name="_83" HorizontalAlignment="Left" Margin="220,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/83.png"/>
+                    <Image x:Name="_68" HorizontalAlignment="Left" Margin="292,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/68.png"/>
+                    <Image x:Name="_70" HorizontalAlignment="Left" Margin="364,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/70.png"/>
+                    <Image x:Name="_71" HorizontalAlignment="Left" Margin="436,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/71.png"/>
+                    <Image x:Name="_72" HorizontalAlignment="Left" Margin="508,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/72.png"/>
+                    <Image x:Name="_74" HorizontalAlignment="Left" Margin="580,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/74.png"/>
+                    <Image x:Name="_75" HorizontalAlignment="Left" Margin="652,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/75.png"/>
+                    <Image x:Name="_76" HorizontalAlignment="Left" Margin="724,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/76.png"/>
+                    <Image x:Name="_186" HorizontalAlignment="Left" Margin="796,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/186.png"/>
+                    <Image x:Name="_222" HorizontalAlignment="Left" Margin="868,152,0,-110.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/222.png"/>
+                    <Image x:Name="_81" HorizontalAlignment="Left" Margin="111,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/81.png"/>
+                    <Image x:Name="_87" HorizontalAlignment="Left" Margin="183,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/87.png"/>
+                    <Image x:Name="_69" HorizontalAlignment="Left" Margin="255,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/69.png"/>
+                    <Image x:Name="_82" HorizontalAlignment="Left" Margin="327,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/82.png"/>
+                    <Image x:Name="_84" HorizontalAlignment="Left" Margin="399,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/84.png"/>
+                    <Image x:Name="_89" HorizontalAlignment="Left" Margin="471,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/89.png"/>
+                    <Image x:Name="_85" HorizontalAlignment="Left" Margin="543,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/85.png"/>
+                    <Image x:Name="_73" HorizontalAlignment="Left" Margin="615,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/73.png"/>
+                    <Image x:Name="_79" HorizontalAlignment="Left" Margin="687,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/79.png"/>
+                    <Image x:Name="_80" HorizontalAlignment="Left" Margin="759,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/80.png"/>
+                    <Image x:Name="_219" HorizontalAlignment="Left" Margin="831,80,0,-38.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/219.png"/>
+                    <Image x:Name="_13" HorizontalAlignment="Left" Margin="942,152,-70.4,-110.4" VerticalAlignment="Top" Width="138" Height="64" Source="Images/13.png"/>
+                    <Image x:Name="_160" HorizontalAlignment="Left" Margin="8,224,0,-174.4" VerticalAlignment="Top" Width="172" Height="64" Source="Images/160.png"/>
+                    <Image x:Name="_90" HorizontalAlignment="Left" Margin="188,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/90.png"/>
+                    <Image x:Name="_88" HorizontalAlignment="Left" Margin="260,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/88.png"/>
+                    <Image x:Name="_67" HorizontalAlignment="Left" Margin="332,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/67.png"/>
+                    <Image x:Name="_86" HorizontalAlignment="Left" Margin="404,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/86.png"/>
+                    <Image x:Name="_66" HorizontalAlignment="Left" Margin="476,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/66.png"/>
+                    <Image x:Name="_78" HorizontalAlignment="Left" Margin="548,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/78.png"/>
+                    <Image x:Name="_77" HorizontalAlignment="Left" Margin="620,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/77.png"/>
+                    <Image x:Name="_188" HorizontalAlignment="Left" Margin="692,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/188.png"/>
+                    <Image x:Name="_190" HorizontalAlignment="Left" Margin="764,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/190.png"/>
+                    <Image x:Name="_191" HorizontalAlignment="Left" Margin="836,224,0,-174.4" VerticalAlignment="Top" Width="64" Height="64" Source="Images/191.png"/>
+                    <Image x:Name="_161" HorizontalAlignment="Left" Margin="908,224,-68.8,-174.4" VerticalAlignment="Top" Width="172" Height="64" Source="Images/161.png"/>
+                    <Image x:Name="_162" HorizontalAlignment="Left" Margin="8,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/162.png"/>
+                    <Image x:Name="_91" HorizontalAlignment="Left" Margin="111,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/91.png"/>
+                    <Image x:Name="_164" HorizontalAlignment="Left" Margin="214,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/164.png"/>
+                    <Image x:Name="_92" HorizontalAlignment="Left" Margin="779,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/92.png"/>
+                    <Image x:Name="_93" HorizontalAlignment="Left" Margin="882,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/93.png"/>
+                    <Image x:Name="_163" HorizontalAlignment="Left" Margin="985,296,-68.8,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/163.png"/>
+                    <Image x:Name="_165" HorizontalAlignment="Left" Margin="676,296,0,-246.4" VerticalAlignment="Top" Width="95" Height="64" Source="Images/165.png"/>
+                    <Image x:Name="_32" HorizontalAlignment="Left" Margin="317,296,0,-246.4" VerticalAlignment="Top" Width="351" Height="64" Source="Images/32.png"/>
+                    <Image x:Name="_221" HorizontalAlignment="Left" Margin="903,80,0,0" VerticalAlignment="Top" Width="64" Height="64" Source="Images/221.png"/>
+                </Grid>
+
+            </Border>
+        </Canvas>
+    </Viewbox>
+</Window>

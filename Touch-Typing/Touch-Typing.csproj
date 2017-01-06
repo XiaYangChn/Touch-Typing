@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65382B20-D3B2-4BA7-A683-0111ED0FB2CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Touch_Typing</RootNamespace>
+    <AssemblyName>Touch-Typing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeyboardHook.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\13.png" />
+    <Resource Include="Images\160.png" />
+    <Resource Include="Images\161.png" />
+    <Resource Include="Images\162.png" />
+    <Resource Include="Images\163.png" />
+    <Resource Include="Images\164.png" />
+    <Resource Include="Images\165.png" />
+    <Resource Include="Images\186.png" />
+    <Resource Include="Images\187.png" />
+    <Resource Include="Images\188.png" />
+    <Resource Include="Images\189.png" />
+    <Resource Include="Images\190.png" />
+    <Resource Include="Images\191.png" />
+    <Resource Include="Images\192.png" />
+    <Resource Include="Images\20.png" />
+    <Resource Include="Images\219.png" />
+    <Resource Include="Images\220.png" />
+    <Resource Include="Images\221.png" />
+    <Resource Include="Images\222.png" />
+    <Resource Include="Images\48.png" />
+    <Resource Include="Images\49.png" />
+    <Resource Include="Images\50.png" />
+    <Resource Include="Images\51.png" />
+    <Resource Include="Images\52.png" />
+    <Resource Include="Images\53.png" />
+    <Resource Include="Images\54.png" />
+    <Resource Include="Images\55.png" />
+    <Resource Include="Images\56.png" />
+    <Resource Include="Images\57.png" />
+    <Resource Include="Images\65.png" />
+    <Resource Include="Images\66.png" />
+    <Resource Include="Images\67.png" />
+    <Resource Include="Images\68.png" />
+    <Resource Include="Images\69.png" />
+    <Resource Include="Images\70.png" />
+    <Resource Include="Images\71.png" />
+    <Resource Include="Images\72.png" />
+    <Resource Include="Images\73.png" />
+    <Resource Include="Images\74.png" />
+    <Resource Include="Images\75.png" />
+    <Resource Include="Images\76.png" />
+    <Resource Include="Images\77.png" />
+    <Resource Include="Images\78.png" />
+    <Resource Include="Images\79.png" />
+    <Resource Include="Images\8.png" />
+    <Resource Include="Images\80.png" />
+    <Resource Include="Images\81.png" />
+    <Resource Include="Images\82.png" />
+    <Resource Include="Images\83.png" />
+    <Resource Include="Images\84.png" />
+    <Resource Include="Images\85.png" />
+    <Resource Include="Images\86.png" />
+    <Resource Include="Images\87.png" />
+    <Resource Include="Images\88.png" />
+    <Resource Include="Images\89.png" />
+    <Resource Include="Images\9.png" />
+    <Resource Include="Images\90.png" />
+    <Resource Include="Images\91.png" />
+    <Resource Include="Images\92.png" />
+    <Resource Include="Images\93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icon\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OnClick\_13.png" />
+    <Resource Include="Images\OnClick\_160.png" />
+    <Resource Include="Images\OnClick\_161.png" />
+    <Resource Include="Images\OnClick\_162.png" />
+    <Resource Include="Images\OnClick\_163.png" />
+    <Resource Include="Images\OnClick\_164.png" />
+    <Resource Include="Images\OnClick\_165.png" />
+    <Resource Include="Images\OnClick\_186.png" />
+    <Resource Include="Images\OnClick\_187.png" />
+    <Resource Include="Images\OnClick\_188.png" />
+    <Resource Include="Images\OnClick\_189.png" />
+    <Resource Include="Images\OnClick\_190.png" />
+    <Resource Include="Images\OnClick\_191.png" />
+    <Resource Include="Images\OnClick\_192.png" />
+    <Resource Include="Images\OnClick\_20.png" />
+    <Resource Include="Images\OnClick\_219.png" />
+    <Resource Include="Images\OnClick\_220.png" />
+    <Resource Include="Images\OnClick\_221.png" />
+    <Resource Include="Images\OnClick\_222.png" />
+    <Resource Include="Images\OnClick\_48.png" />
+    <Resource Include="Images\OnClick\_49.png" />
+    <Resource Include="Images\OnClick\_50.png" />
+    <Resource Include="Images\OnClick\_51.png" />
+    <Resource Include="Images\OnClick\_52.png" />
+    <Resource Include="Images\OnClick\_53.png" />
+    <Resource Include="Images\OnClick\_54.png" />
+    <Resource Include="Images\OnClick\_55.png" />
+    <Resource Include="Images\OnClick\_56.png" />
+    <Resource Include="Images\OnClick\_57.png" />
+    <Resource Include="Images\OnClick\_65.png" />
+    <Resource Include="Images\OnClick\_66.png" />
+    <Resource Include="Images\OnClick\_67.png" />
+    <Resource Include="Images\OnClick\_68.png" />
+    <Resource Include="Images\OnClick\_69.png" />
+    <Resource Include="Images\OnClick\_70.png" />
+    <Resource Include="Images\OnClick\_71.png" />
+    <Resource Include="Images\OnClick\_72.png" />
+    <Resource Include="Images\OnClick\_73.png" />
+    <Resource Include="Images\OnClick\_74.png" />
+    <Resource Include="Images\OnClick\_75.png" />
+    <Resource Include="Images\OnClick\_76.png" />
+    <Resource Include="Images\OnClick\_77.png" />
+    <Resource Include="Images\OnClick\_78.png" />
+    <Resource Include="Images\OnClick\_79.png" />
+    <Resource Include="Images\OnClick\_8.png" />
+    <Resource Include="Images\OnClick\_80.png" />
+    <Resource Include="Images\OnClick\_81.png" />
+    <Resource Include="Images\OnClick\_82.png" />
+    <Resource Include="Images\OnClick\_83.png" />
+    <Resource Include="Images\OnClick\_84.png" />
+    <Resource Include="Images\OnClick\_85.png" />
+    <Resource Include="Images\OnClick\_86.png" />
+    <Resource Include="Images\OnClick\_87.png" />
+    <Resource Include="Images\OnClick\_88.png" />
+    <Resource Include="Images\OnClick\_89.png" />
+    <Resource Include="Images\OnClick\_9.png" />
+    <Resource Include="Images\OnClick\_90.png" />
+    <Resource Include="Images\OnClick\_91.png" />
+    <Resource Include="Images\OnClick\_92.png" />
+    <Resource Include="Images\OnClick\_93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OnClick\_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

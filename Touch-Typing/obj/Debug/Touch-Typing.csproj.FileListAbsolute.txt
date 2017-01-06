@@ -1,0 +1,13 @@
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\bin\Debug\Touch-Typing.exe.config
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\bin\Debug\Touch-Typing.exe
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\bin\Debug\Touch-Typing.pdb
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch-Typing.csprojResolveAssemblyReference.cache
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\MainWindow.baml
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\MainWindow.g.cs
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\App.g.cs
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch-Typing_MarkupCompile.cache
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch-Typing.g.resources
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch_Typing.Properties.Resources.resources
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch-Typing.csproj.GenerateResource.Cache
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch-Typing.exe
+F:\Desktop\C++ File\code\C#\KeyShowPoj\正式版本\Touch-Typing\Touch-Typing\obj\Debug\Touch-Typing.pdb
